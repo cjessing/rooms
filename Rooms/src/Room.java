@@ -18,11 +18,7 @@ public class Room {
         this.adjacentRooms = adjacentRooms;
     }
 
-    public String getAdjacentRooms() {
-        String adjacentRooms = "";
-        for (Room room : this.adjacentRooms){
-            adjacentRooms += room.name + ", ";
-        }
-        return adjacentRooms;
+    public ArrayList<Room> getAdjacentRooms() {
+        return this.adjacentRooms;
     }
 }
